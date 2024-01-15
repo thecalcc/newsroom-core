@@ -22,6 +22,7 @@ import {personalizeHome} from 'agenda/actions';
 import {RadioButtonGroup} from 'features/sections/SectionSwitch';
 import {getCurrentUser} from 'company-admin/selectors';
 import {IPersonalizedDashboardsWithData} from 'home/reducers';
+import SearchBase from 'layout/components/SearchBase';
 
 export const WIRE_SECTION = 'wire';
 
@@ -70,7 +71,7 @@ interface IDispatchProps {
 
 type IProps = IStateProps & IDispatchProps;
 
-class HomeApp extends React.Component<IProps, IState> {
+class HomeApp extends React.Component<IProps, IState>  {
     static propTypes: any;
 
     height: number;
